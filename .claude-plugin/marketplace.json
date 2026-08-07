@@ -1,0 +1,12 @@
+{
+  "name": "unity-architect-pro-marketplace",
+  "owner": {
+    "name": "Robbie Stokes"
+  },
+  "plugins": [
+    {
+      "name": "unity-architect-pro",
+      "source": "./"
+    }
+  ]
+}

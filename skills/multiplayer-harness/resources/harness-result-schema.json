@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Unity Architect Pro Multiplayer Harness Result",
+  "type": "object",
+  "required": [
+    "scenario",
+    "topology",
+    "result",
+    "processes"
+  ],
+  "properties": {
+    "scenario": {
+      "type": "string"
+    },
+    "build": {
+      "type": "object"
+    },
+    "topology": {
+      "type": "string"
+    },
+    "conditions": {
+      "type": "object"
+    },
+    "result": {
+      "enum": [
+        "passed",
+        "failed",
+        "timeout",
+        "inconclusive"
+      ]
+    },
+    "processes": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "metrics": {
+      "type": "object"
+    },
+    "failures": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

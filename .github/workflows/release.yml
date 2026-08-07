@@ -1,0 +1,22 @@
+name: Package Release
+on:
+  push:
+    tags: ["v*"]
+permissions:
+  contents: write
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: python scripts/validate_plugin.py
+      - name: Build zip
+        run: |
+          mkdir -p dist
+          zip -r "dist/unity-architect-pro-${GITHUB_REF_NAME}.zip" . -x '.git/*' 'dist/*' '__pycache__/*' '*.pyc'
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: dist/*.zip
+          generate_release_notes: true

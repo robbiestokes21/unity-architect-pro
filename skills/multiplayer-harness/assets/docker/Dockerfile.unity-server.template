@@ -1,0 +1,9 @@
+# Template only. Match the base image/runtime libraries to your Unity version and Linux server build.
+FROM ubuntu:24.04
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends ca-certificates libatomic1 && rm -rf /var/lib/apt/lists/*
+WORKDIR /game
+COPY ServerBuild/ /game/
+RUN chmod +x /game/GameServer || true
+ENV UAP_ROLE=server
+EXPOSE 7777/udp
+ENTRYPOINT ["/game/GameServer", "-batchmode", "-nographics"]

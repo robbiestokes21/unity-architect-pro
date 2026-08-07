@@ -1,0 +1,11 @@
+# Performance report
+- Scenario/build/device/topology:
+- Budget:
+- Capture method:
+- Baseline median / p95 / p99:
+- Changed median / p95 / p99:
+- GC allocation and collections:
+- Memory delta:
+- Network bytes/messages (if applicable):
+- Interpretation:
+- Remaining bottleneck / next experiment:

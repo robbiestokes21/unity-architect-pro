@@ -1,0 +1,2 @@
+# Scenario matrix
+Minimum release-significant coverage should include a production topology happy path, one remote client, late join/state reconstruction, disconnect cleanup, reconnect if supported, scene/match transition, and at least one degraded-network profile for timing-sensitive gameplay. Add hostile/invalid requests for authoritative competitive/economy features. Scale/load tests are separate from correctness tests.

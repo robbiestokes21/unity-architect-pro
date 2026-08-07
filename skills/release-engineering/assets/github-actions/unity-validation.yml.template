@@ -1,0 +1,15 @@
+# Template: adapt Unity activation/license handling and runner choice to your organization.
+name: Unity Validation
+on:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Project intelligence
+        run: python3 .claude/plugins/unity-architect-pro/skills/project-intelligence/scripts/extended_project_facts.py .
+      - name: Asset integrity preflight
+        run: python3 .claude/plugins/unity-architect-pro/skills/asset-integrity/scripts/scan_asset_integrity.py . --json
+      # Add your organization's Unity test/build action or batchmode command here.
