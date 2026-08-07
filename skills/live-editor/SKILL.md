@@ -47,3 +47,5 @@ A live-editor claim should be backed by at least one of: inspected property valu
 
 ## Bundled Unity-side templates
 `assets/UnityArchitectPro.Editor/` contains optional Editor utilities for hierarchy snapshots and Game View capture. Treat them as templates: verify the project's Unity/C# compatibility, copy into an Editor-only assembly, run, collect evidence, then remove them unless the project intentionally adopts the tooling.
+
+Phase 5 also includes `LiveUnityInspector.cs` and `SerializedPropertyMutation.cs`. Use `resources/live-inspector-contract.md` as the stable evidence/mutation contract. Prefer read-only full reports or targeted selection inspection; mutate one property only after capturing its stable global object ID, property path, and exact expected value. Package-specific surfaces remain optional and are discovered through assets/serialized state.

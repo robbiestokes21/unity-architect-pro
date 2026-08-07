@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.0.0-alpha.6 — Phase 5: Live Unity Inspector
+
+- Added full loaded-scene hierarchy and arbitrary visible `SerializedProperty` inspection with bounded JSON evidence output.
+- Added prefab source/override analysis plus cameras, tags/layers/sorting layers, Input System, Animator state machines, NavMesh/navigation, lighting, render-pipeline, physics, volumes and project-settings coverage.
+- Added optimistic, Undo-backed single-property mutation with stable global IDs, expected-value checks, an explicit safe-type allowlist, project-settings opt-in, save and read-back verification.
+- Added the `live-inspector` skill, inspector specialist agent, capability contract, fixtures, static validation, release metadata and documentation.
+
 ## 2.0.0-alpha.5 — Phase 4: Persistent Project Memory
 
 - Rebuilt project memory as a versioned SQLite engineering knowledge store with facts, ADR decisions, incidents/root causes, feature history, relationships and performance samples.

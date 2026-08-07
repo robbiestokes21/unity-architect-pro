@@ -1,6 +1,6 @@
 {
   "name": "unity-architect-pro",
-  "version": "2.0.0-alpha.5",
+  "version": "2.0.0-alpha.6",
   "description": "Autonomous multi-agent Unity engineering platform for Claude Code: project intelligence and memory, live Editor/runtime inspection, gameplay and visual QA, profiling, build/release automation, provider-aware multiplayer labs, security reviews, documentation, refactoring and design workflows.",
   "author": {
     "name": "Robbie Stokes"

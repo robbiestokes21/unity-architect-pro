@@ -38,6 +38,7 @@ Load/use the appropriate sibling skill:
 - `build-doctor`: player/dedicated-server build failures and validation
 - `release-engineering`: CI, artifacts, release pipelines and server images
 - `live-editor`: inspect and operate the actual running Unity Editor
+- `live-inspector`: deep hierarchy/component/project-settings inspection and guarded serialized-property changes
 - `hierarchy-inspector`: inspect scenes/prefabs/components/serialized wiring
 - `console-diagnostics`: current-run Console and log diagnosis
 - `visual-verification`: Game View/UI/rendering screenshot verification

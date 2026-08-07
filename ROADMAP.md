@@ -8,6 +8,7 @@
 - [x] Durable SQLite project memory helper
 - [x] Phase 3: evidence-backed project graph, reverse impact analysis, asmdef cycles, serialized GUID integrity and conservative unused-asset candidates
 - [x] Phase 4: versioned engineering memory with migration, search, incidents, ADRs, performance history, confidence/expiry and stale-memory review
+- [x] Phase 5: live hierarchy/component/property, prefab, camera, input, animation, navigation, lighting/rendering/physics/project-settings inspection and guarded serialized mutation
 - [x] Runtime debugger/probe workflow
 - [x] Gameplay QA and visual AI skills
 - [x] Performance/security/build-farm/release-manager skills
@@ -16,3 +17,4 @@
 - [ ] Profiler data exporters for additional Unity package/version combinations
 - [ ] Optional semantic project index backend
 - [ ] Marketplace release after alpha validation across real projects
+- [ ] Validate Phase 5 templates in a Unity 2022 LTS project and a Unity 6 project with URP, Input System and AI Navigation installed

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "unityVersion": "6000.0.fixture",
+  "utc": "2026-08-07T00:00:00Z",
+  "activeScene": "Assets/Scenes/Fixture.unity",
+  "hierarchy": [{"category":"hierarchy","path":"Assets/Scenes/Fixture.unity::Root","type":"UnityEngine.GameObject","value":"activeSelf=True","properties":[]}],
+  "cameras": [],
+  "animators": [],
+  "lighting": [],
+  "packages": [],
+  "settings": [],
+  "assets": []
+}

@@ -20,4 +20,6 @@ Inspect before editing. Build a concise tree containing hierarchy path, active s
 
 Prefer `SerializedObject`/`SerializedProperty` or the connected Editor's equivalent over reflection for serialized data. Do not traverse arbitrary managed graphs that can execute user code.
 
+For Phase 5 coverage, route to `live-inspector` for cameras, project tags/layers/sorting layers, Input System action assets, Animator controller state machines, NavMesh data/settings, lights/lighting settings, volume profiles/components, render pipeline, physics and project settings. Record prefab source plus property modification counts before any mutation.
+
 For large scenes, inspect targeted subtrees first and summarize counts instead of dumping the entire hierarchy into context.

@@ -1,14 +1,13 @@
-<<<<<<< HEAD
 # Unity Architect Pro for Claude Code
 
 Unity Architect Pro is a multi-skill, multi-agent Unity engineering system for Claude Code. It is designed to behave more like a senior Unity engineering team than a single code-generation prompt: inspect the real project first, design within its architecture, operate the Editor safely, implement, review, test, profile, build, and only then declare work complete.
 
-> Version: **2.0.0-alpha.5** — Phase 4 persistent engineering memory.
+> Version: **2.0.0-alpha.6** — Phase 5 Live Unity Inspector.
 
 
-## Autonomous engineering expansion (alpha.5)
+## Live Unity Inspector (alpha.6)
 
-Alpha.5 includes the platform phases as first-class skills and upgrades project memory into a versioned engineering knowledge layer: durable project memory, dependency/impact graphs, runtime debugging, gameplay testing, visual AI QA, performance/security engineering, cross-platform build-farm planning, documentation generation, cross-file refactoring, game/system design, world building, project learning and release management. The repository now also includes GitHub Actions validation/release packaging, issue/PR templates, contributing/security policies, and a repository setup guide.
+Alpha.6 adds an Editor-only inspection toolkit that captures loaded hierarchy, arbitrary visible serialized properties, prefab overrides, cameras, tags/layers/sorting layers, Input System assets, Animator state machines, NavMesh data, lighting, volumes, render pipeline, physics, and project settings. Optional package types are discovered without compile-time dependencies. Serialized-property changes use stable object IDs, expected-value concurrency checks, an explicit type allowlist, Undo, save, and read-back verification.
 
 Useful commands:
 
@@ -64,6 +63,7 @@ Self-Review Definition of Done
 | `save-system` | Versioned persistence, migrations, cloud/local save safety |
 | `release-engineering` | CI, artifacts, versioning, deployment and server images |
 | `live-editor` | Live Unity Editor capability discovery, inspection and transactional operation |
+| `live-inspector` | Phase 5 full-project/selection inspection and guarded serialized-property mutation |
 | `hierarchy-inspector` | Scene/prefab/component/serialized-state inspection |
 | `console-diagnostics` | Current-run Console, Editor/Player/server log diagnosis |
 | `visual-verification` | Game View/UI/rendering screenshot verification |
@@ -204,7 +204,7 @@ claude --debug --plugin-dir ./unity-architect-pro
 
 ## Status
 
-This is an alpha expansion. Provider-specific APIs still require version-aware verification against the project's installed packages and official documentation. The plugin intentionally encodes that behavior rather than pretending package APIs are timeless.
+This is an alpha expansion. Copy the optional `UnityArchitectPro.Editor` templates into a compatible Unity project's Editor-only assembly and validate compilation there before adopting them. Provider/package-specific APIs still require version-aware verification.
 
 ## License
 
@@ -246,6 +246,3 @@ The multiplayer harness is intentionally provider-neutral: project/provider adap
 ## Phase 3: Autonomous Project Intelligence
 
 Alpha 4 adds evidence-backed serialized GUID and assembly graphs, reverse/transitive impact analysis, conservative cleanup candidates, and JSON/DOT export. Use `/unity-architect-pro:impact-analysis` before high-blast-radius changes.
-=======
-# unity-architect-pro
->>>>>>> ff8ce75013644025b401b2606c40e9e77361df93
