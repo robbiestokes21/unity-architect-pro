@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Unity Architect Pro for Claude Code
 
 Unity Architect Pro is a multi-skill, multi-agent Unity engineering system for Claude Code. It is designed to behave more like a senior Unity engineering team than a single code-generation prompt: inspect the real project first, design within its architecture, operate the Editor safely, implement, review, test, profile, build, and only then declare work complete.
@@ -245,3 +246,6 @@ The multiplayer harness is intentionally provider-neutral: project/provider adap
 ## Phase 3: Autonomous Project Intelligence
 
 Alpha 4 adds evidence-backed serialized GUID and assembly graphs, reverse/transitive impact analysis, conservative cleanup candidates, and JSON/DOT export. Use `/unity-architect-pro:impact-analysis` before high-blast-radius changes.
+=======
+# unity-architect-pro
+>>>>>>> ff8ce75013644025b401b2606c40e9e77361df93
