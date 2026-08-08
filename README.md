@@ -2,7 +2,11 @@
 
 Unity Architect Pro is a multi-skill, multi-agent Unity engineering system for Claude Code. It is designed to behave more like a senior Unity engineering team than a single code-generation prompt: inspect the real project first, design within its architecture, operate the Editor safely, implement, review, test, profile, build, and only then declare work complete.
 
-> Version: **2.0.0-alpha.7** — Phase 6 Runtime Debugger.
+> Version: **2.0.0-alpha.8** — Phase 7 Multiplayer Laboratory.
+
+## Multiplayer Laboratory (alpha.8)
+
+Alpha.8 adds a scenario-driven multiplayer laboratory for dedicated servers and standalone clients: dependency-ordered startup, late join, stop/restart/reconnect actions, explicit external fault-controller hooks, readiness/completion/failure markers, per-generation logs, deterministic variables, guaranteed teardown, structured schema-v2 results, and project/provider adapter rendering without inventing framework APIs.
 
 ## Runtime Debugger (alpha.7)
 
@@ -73,6 +77,7 @@ Self-Review Definition of Done
 | `visual-verification` | Game View/UI/rendering screenshot verification |
 | `profiler-capture` | Evidence-based CPU/GPU/GC/memory/network performance captures |
 | `multiplayer-harness` | Multi-client/server process and network-fault test harnesses |
+| `multiplayer-lab-operator` | Phase 7 process/fault scenario execution and evidence specialist |
 | `gameplay-ai` | NPC decision, navigation, perception and networked AI |
 | `input-engineer` | Input System, rebinding, device pairing and local multiplayer |
 | `asset-integrity` | GUID/meta/reference/import integrity and release preflight |

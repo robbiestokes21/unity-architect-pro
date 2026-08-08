@@ -10,6 +10,7 @@
 - [x] Phase 4: versioned engineering memory with migration, search, incidents, ADRs, performance history, confidence/expiry and stale-memory review
 - [x] Phase 5: live hierarchy/component/property, prefab, camera, input, animation, navigation, lighting/rendering/physics/project-settings inspection and guarded serialized mutation
 - [x] Phase 6: live object, FSM/AI, networking ownership, task/coroutine lifecycle and bounded runtime-metric diagnostics
+- [x] Phase 7: dedicated server/client orchestration, late join/reconnect actions, explicit fault-controller hooks and structured multiplayer evidence
 - [x] Runtime debugger/probe workflow
 - [x] Gameplay QA and visual AI skills
 - [x] Performance/security/build-farm/release-manager skills

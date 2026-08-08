@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.0.0-alpha.8 — Phase 7: Multiplayer Laboratory
+
+- Added scenario-driven dedicated server/client orchestration with dependency readiness, late join, expected stop and restart/reconnect actions.
+- Added reviewed external fault-controller hooks with mandatory teardown support, argv-only execution and bounded process artifacts.
+- Added provider/project adapter rendering, scenario/result schemas, structured generation/timing/failure evidence and a specialist lab operator.
+- Added a real multi-process fixture covering dedicated-server readiness, delayed client join and client restart/reconnect.
+
 ## 2.0.0-alpha.7 — Phase 6: Runtime Debugger
 
 - Expanded runtime diagnostics from a periodic transform log into structured object, physics, Animator, FSM/AI, network ownership, operation and runtime-metric snapshots.

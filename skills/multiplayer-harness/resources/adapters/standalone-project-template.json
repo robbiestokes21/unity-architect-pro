@@ -1,0 +1,18 @@
+{
+  "name": "standalone-project-template",
+  "provider": "project-defined",
+  "requiresProjectBootstrap": true,
+  "scenarioTemplate": {
+    "schemaVersion": 1,
+    "name": "${SCENARIO}",
+    "seed": 1,
+    "timeoutSeconds": 120,
+    "topology": "dedicated-server+2-clients",
+    "processes": [
+      {"name":"server","role":"server","command":["${SERVER_EXE}","--uap-role","server","--uap-port","${PORT}"],"readyRegex":"UAP_NET_READY","failureRegex":"UAP_NET_FAILED"},
+      {"name":"client-1","role":"client","command":["${CLIENT_EXE}","--uap-role","client","--uap-endpoint","127.0.0.1:${PORT}","--uap-player","client-1"],"startAfterReady":["server"],"readyRegex":"UAP_NET_CONNECTED","completeRegex":"UAP_TEST_COMPLETE","failureRegex":"UAP_TEST_FAILED"},
+      {"name":"client-2","role":"client","autoStart":false,"command":["${CLIENT_EXE}","--uap-role","client","--uap-endpoint","127.0.0.1:${PORT}","--uap-player","client-2"],"readyRegex":"UAP_NET_CONNECTED","completeRegex":"UAP_TEST_COMPLETE","failureRegex":"UAP_TEST_FAILED"}
+    ],
+    "actions": [{"atSeconds":5,"type":"start","target":"client-2"}]
+  }
+}

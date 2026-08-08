@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Unity Architect Pro Multiplayer Lab Scenario",
+  "type": "object",
+  "required": ["schemaVersion", "name", "processes"],
+  "properties": {
+    "schemaVersion": {"const": 1},
+    "name": {"type": "string", "minLength": 1},
+    "id": {"type": "string"},
+    "seed": {"type": "integer"},
+    "timeoutSeconds": {"type": "number", "exclusiveMinimum": 0},
+    "topology": {"type": "string"},
+    "variables": {"type": "object", "additionalProperties": {"type": ["string", "number", "boolean"]}},
+    "processes": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object", "required": ["name", "command"],
+        "properties": {
+          "name": {"type": "string", "minLength": 1}, "role": {"type": "string"},
+          "command": {"type": "array", "minItems": 1}, "cwd": {"type": "string"}, "env": {"type": "object"},
+          "readyRegex": {"type": "string"}, "completeRegex": {"type": "string"}, "failureRegex": {"type": "string"},
+          "autoStart": {"type": "boolean"}, "required": {"type": "boolean"}, "startAfterReady": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    },
+    "actions": {
+      "type": "array", "items": {"type": "object", "required": ["type", "atSeconds"], "properties": {"type": {"enum": ["start", "stop", "restart", "fault_on", "fault_off"]}, "atSeconds": {"type": "number", "minimum": 0}, "target": {"type": "string"}, "command": {"type": "array"}, "teardownCommand": {"type": "array"}}}
+    }
+  }
+}
