@@ -1,6 +1,6 @@
 ---
-name: live-editor
-description: Operate a connected Unity Editor as a live engineering surface: inspect hierarchy/components, read Console state, enter/exit Play Mode, invoke safe editor actions, capture Game View evidence, and verify changes. Use when the task depends on the actual running Editor rather than source files alone.
+name: "live-editor"
+description: "Operate a connected Unity Editor as a live engineering surface: inspect hierarchy/components, read Console state, enter/exit Play Mode, invoke safe editor actions, capture Game View evidence, and verify changes. Use when the task depends on the actual running Editor rather than source files alone."
 ---
 
 # Live Unity Editor Intelligence

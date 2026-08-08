@@ -1,6 +1,6 @@
 ---
-name: architecture
-description: Design advanced Unity systems and features before implementation, including gameplay architecture, save/load, inventory, combat, AI, UI, scene flow, services, content pipelines, ECS/DOTS, and multiplayer. Use for large or cross-cutting features.
+name: "architecture"
+description: "Design advanced Unity systems and features before implementation, including gameplay architecture, save/load, inventory, combat, AI, UI, scene flow, services, content pipelines, ECS/DOTS, and multiplayer. Use for large or cross-cutting features."
 ---
 
 # Unity Architecture

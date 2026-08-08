@@ -4,7 +4,6 @@ Unity Architect Pro is a multi-skill, multi-agent Unity engineering system for C
 
 > Version: **2.0.0-alpha.6** — Phase 5 Live Unity Inspector.
 
-
 ## Live Unity Inspector (alpha.6)
 
 Alpha.6 adds an Editor-only inspection toolkit that captures loaded hierarchy, arbitrary visible serialized properties, prefab overrides, cameras, tags/layers/sorting layers, Input System assets, Animator state machines, NavMesh data, lighting, volumes, render pipeline, physics, and project settings. Optional package types are discovered without compile-time dependencies. Serialized-property changes use stable object IDs, expected-value concurrency checks, an explicit type allowlist, Undo, save, and read-back verification.
@@ -78,6 +77,10 @@ Self-Review Definition of Done
 | `self-review` | Final Definition-of-Done completion gate |
 | `project-memory` | Durable facts, ADR decisions, incidents, feature history, relationships and performance memory |
 | `memory-review` | Audit stale/expired/low-confidence or superseded project knowledge |
+
+### Optional offline Unity 6.5 documentation
+
+Download `UnityDocumentation.zip` from the release assets (or retrieve it through Git LFS), then extract it to `docs/UnityDocumentation/Documentation/`. The extracted documentation is ignored by Git; only the archive and its installation/licensing notes are distributed. See [`docs/UnityDocumentation/README.md`](docs/UnityDocumentation/README.md).
 
 ## Specialist agents
 

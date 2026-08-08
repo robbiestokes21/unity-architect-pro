@@ -1,6 +1,6 @@
 ---
-name: project-memory
-description: Maintain durable Unity engineering memory: verified project facts, architecture decisions, bug/fix history, feature history, relationships, networking choices, and performance baselines. Use before/after substantial work so future Claude sessions inherit evidence-backed context without trusting stale guesses.
+name: "project-memory"
+description: "Maintain durable Unity engineering memory: verified project facts, architecture decisions, bug/fix history, feature history, relationships, networking choices, and performance baselines. Use before/after substantial work so future Claude sessions inherit evidence-backed context without trusting stale guesses."
 ---
 # Project Memory
 

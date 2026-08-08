@@ -1,6 +1,6 @@
 ---
-name: visual-verification
-description: Verify Unity Game View, UI, scene composition, rendering, cameras, animations, and visual regressions using screenshots or captured frames. Use when correctness is visible rather than fully provable from code/tests.
+name: "visual-verification"
+description: "Verify Unity Game View, UI, scene composition, rendering, cameras, animations, and visual regressions using screenshots or captured frames. Use when correctness is visible rather than fully provable from code/tests."
 ---
 # Visual Verification
 

@@ -1,6 +1,6 @@
 ---
-name: self-review
-description: Run Unity Architect Pro's completion gate after implementing a meaningful change. Compile, inspect diagnostics, review architecture/performance/security impact, run targeted tests, validate Editor/runtime state, and build when required before declaring work done.
+name: "self-review"
+description: "Run Unity Architect Pro's completion gate after implementing a meaningful change. Compile, inspect diagnostics, review architecture/performance/security impact, run targeted tests, validate Editor/runtime state, and build when required before declaring work done."
 ---
 
 # Unity Completion Gate

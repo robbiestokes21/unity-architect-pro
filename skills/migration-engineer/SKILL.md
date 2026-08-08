@@ -1,6 +1,6 @@
 ---
-name: migration-engineer
-description: Plan and execute safe Unity migrations across editor versions, render/input/networking packages, serialization schemas, APIs, prefabs/scenes, and assembly boundaries with checkpoints and rollback strategy.
+name: "migration-engineer"
+description: "Plan and execute safe Unity migrations across editor versions, render/input/networking packages, serialization schemas, APIs, prefabs/scenes, and assembly boundaries with checkpoints and rollback strategy."
 ---
 # Unity Migration Engineering
 

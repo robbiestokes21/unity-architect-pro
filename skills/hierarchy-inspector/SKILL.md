@@ -1,6 +1,6 @@
 ---
-name: hierarchy-inspector
-description: Inspect and reason about Unity scenes, prefabs, GameObjects, components, serialized references, prefab overrides, missing scripts, and dependency wiring. Use before risky scene/prefab edits or when diagnosing broken Inspector wiring.
+name: "hierarchy-inspector"
+description: "Inspect and reason about Unity scenes, prefabs, GameObjects, components, serialized references, prefab overrides, missing scripts, and dependency wiring. Use before risky scene/prefab edits or when diagnosing broken Inspector wiring."
 ---
 # Hierarchy and Serialized-State Inspector
 

@@ -1,6 +1,6 @@
 ---
-name: package-manager
-description: Safely analyze and change Unity Package Manager dependencies, scoped registries, Git/local packages, lockfiles, package migrations, and compatibility. Use when adding/upgrading/removing Unity or third-party packages.
+name: "package-manager"
+description: "Safely analyze and change Unity Package Manager dependencies, scoped registries, Git/local packages, lockfiles, package migrations, and compatibility. Use when adding/upgrading/removing Unity or third-party packages."
 ---
 # Package Management
 

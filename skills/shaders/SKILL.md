@@ -1,6 +1,6 @@
 ---
-name: shaders
-description: Create, review and debug Unity shaders, Shader Graphs, HLSL, URP/HDRP renderer features/custom passes and GPU performance. Use for visual rendering code or GPU bottlenecks.
+name: "shaders"
+description: "Create, review and debug Unity shaders, Shader Graphs, HLSL, URP/HDRP renderer features/custom passes and GPU performance. Use for visual rendering code or GPU bottlenecks."
 ---
 
 # Unity Shader & Rendering Engineer

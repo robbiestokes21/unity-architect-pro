@@ -1,6 +1,6 @@
 ---
-name: performance
-description: Analyze and improve Unity CPU, GPU, memory, GC, loading, physics, rendering, asset, mobile, and multiplayer/network performance. Use for profiling, stutter, frame-time, bandwidth, allocation, or scale problems.
+name: "performance"
+description: "Analyze and improve Unity CPU, GPU, memory, GC, loading, physics, rendering, asset, mobile, and multiplayer/network performance. Use for profiling, stutter, frame-time, bandwidth, allocation, or scale problems."
 ---
 
 # Unity Performance Engineering

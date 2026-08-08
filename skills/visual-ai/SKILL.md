@@ -1,6 +1,6 @@
 ---
-name: visual-ai
-description: Perform screenshot-based Unity visual QA for UI layout, missing assets, materials, lighting, camera/rendering regressions and cross-resolution differences. Use after visual changes or when tests require image judgment.
+name: "visual-ai"
+description: "Perform screenshot-based Unity visual QA for UI layout, missing assets, materials, lighting, camera/rendering regressions and cross-resolution differences. Use after visual changes or when tests require image judgment."
 ---
 # Visual AI QA
 

@@ -1,6 +1,6 @@
 ---
-name: addressables
-description: Design, implement, review and debug Unity Addressables usage including groups, labels, catalogs, remote content, content updates, dependency duplication, AsyncOperationHandle lifetime, scene loading and memory release.
+name: "addressables"
+description: "Design, implement, review and debug Unity Addressables usage including groups, labels, catalogs, remote content, content updates, dependency duplication, AsyncOperationHandle lifetime, scene loading and memory release."
 ---
 
 # Unity Addressables Engineer

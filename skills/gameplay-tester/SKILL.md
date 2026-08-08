@@ -1,6 +1,6 @@
 ---
-name: gameplay-tester
-description: Design and run end-to-end Unity gameplay QA flows such as movement, combat, inventory, crafting, quests, vehicles, respawn and UI interactions. Use when validating whether a feature actually works as a player experiences it.
+name: "gameplay-tester"
+description: "Design and run end-to-end Unity gameplay QA flows such as movement, combat, inventory, crafting, quests, vehicles, respawn and UI interactions. Use when validating whether a feature actually works as a player experiences it."
 ---
 # Gameplay Tester
 

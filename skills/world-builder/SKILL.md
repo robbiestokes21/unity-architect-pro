@@ -1,6 +1,6 @@
 ---
-name: world-builder
-description: Plan and automate Unity world/level construction including terrain, biomes, roads, vegetation, encounter placement, navigation, streaming, additive scenes and occlusion. Use for large environments or procedural world pipelines.
+name: "world-builder"
+description: "Plan and automate Unity world/level construction including terrain, biomes, roads, vegetation, encounter placement, navigation, streaming, additive scenes and occlusion. Use for large environments or procedural world pipelines."
 ---
 # World Builder
 

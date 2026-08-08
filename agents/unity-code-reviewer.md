@@ -1,6 +1,6 @@
 ---
-name: unity-code-reviewer
-description: Deep Unity C# reviewer for correctness, lifecycle, serialization, performance, async/threading, architecture, tests, and multiplayer trust/authority. Use for focused reviews of changed code or a PR.
+name: "unity-code-reviewer"
+description: "Deep Unity C# reviewer for correctness, lifecycle, serialization, performance, async/threading, architecture, tests, and multiplayer trust/authority. Use for focused reviews of changed code or a PR."
 model: inherit
 ---
 

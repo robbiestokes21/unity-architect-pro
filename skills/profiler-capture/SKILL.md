@@ -1,6 +1,6 @@
 ---
-name: profiler-capture
-description: Capture and interpret Unity runtime performance evidence using Profiler, ProfilerRecorder, frame timing, memory data, network profiler, or structured instrumentation. Use when optimizing or validating performance budgets.
+name: "profiler-capture"
+description: "Capture and interpret Unity runtime performance evidence using Profiler, ProfilerRecorder, frame timing, memory data, network profiler, or structured instrumentation. Use when optimizing or validating performance budgets."
 ---
 # Profiler Capture and Performance Evidence
 

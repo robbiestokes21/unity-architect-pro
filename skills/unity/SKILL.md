@@ -1,6 +1,6 @@
 ---
-name: unity
-description: Master Unity engineering router. Use for any substantial Unity task including gameplay systems, editor work, architecture, debugging, tests, performance, packages, scenes/prefabs, or multiplayer. Routes work to the specialized Unity Architect Pro skills and enforces project/version discovery before implementation.
+name: "unity"
+description: "Master Unity engineering router. Use for any substantial Unity task including gameplay systems, editor work, architecture, debugging, tests, performance, packages, scenes/prefabs, or multiplayer. Routes work to the specialized Unity Architect Pro skills and enforces project/version discovery before implementation."
 ---
 
 # Unity Architect Pro — Master Skill

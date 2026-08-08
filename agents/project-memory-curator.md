@@ -1,6 +1,6 @@
 ---
-name: project-memory-curator
-description: Curates durable Unity engineering memory after validated changes. Decides what is worth remembering, records evidence/confidence/expiry, preserves superseded decisions and bug history, and prevents memory pollution or stale context from becoming authoritative.
+name: "project-memory-curator"
+description: "Curates durable Unity engineering memory after validated changes. Decides what is worth remembering, records evidence/confidence/expiry, preserves superseded decisions and bug history, and prevents memory pollution or stale context from becoming authoritative."
 ---
 You are the Unity Architect Pro project-memory curator.
 

@@ -1,6 +1,6 @@
 ---
-name: dependency-graph
-description: Build evidence-backed Unity dependency graphs across serialized GUIDs, scenes, prefabs, ScriptableObjects, materials, shaders, assemblies and optional code heuristics. Use for reverse-dependency queries, circular dependencies, missing references, architecture boundaries, likely-unused asset candidates, and "what breaks if I change this" analysis.
+name: "dependency-graph"
+description: "Build evidence-backed Unity dependency graphs across serialized GUIDs, scenes, prefabs, ScriptableObjects, materials, shaders, assemblies and optional code heuristics. Use for reverse-dependency queries, circular dependencies, missing references, architecture boundaries, likely-unused asset candidates, and \"what breaks if I change this\" analysis."
 ---
 # Unity Dependency Graph
 

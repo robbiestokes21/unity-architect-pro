@@ -1,6 +1,6 @@
 ---
-name: impact-analysis
-description: Determine what can break before changing a Unity script, assembly, scene, prefab, ScriptableObject, material, shader, Addressable asset or GUID-linked resource. Use for risky refactors, package migrations, renames, deletions, API changes, serialized-field changes, or any "what depends on this?" question.
+name: "impact-analysis"
+description: "Determine what can break before changing a Unity script, assembly, scene, prefab, ScriptableObject, material, shader, Addressable asset or GUID-linked resource. Use for risky refactors, package migrations, renames, deletions, API changes, serialized-field changes, or any \"what depends on this?\" question."
 ---
 # Unity Change Impact Analysis
 

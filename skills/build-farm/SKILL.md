@@ -1,6 +1,6 @@
 ---
-name: build-farm
-description: Plan and validate a Unity build matrix for Windows, Linux, macOS, Android, iOS, WebGL and Dedicated Server, including Mono/IL2CPP, architecture, stripping and platform-specific failures. Use for CI matrices or cross-platform shipping readiness.
+name: "build-farm"
+description: "Plan and validate a Unity build matrix for Windows, Linux, macOS, Android, iOS, WebGL and Dedicated Server, including Mono/IL2CPP, architecture, stripping and platform-specific failures. Use for CI matrices or cross-platform shipping readiness."
 ---
 # Build Farm
 

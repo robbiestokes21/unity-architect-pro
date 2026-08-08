@@ -1,6 +1,6 @@
 ---
-name: multiplayer
-description: Architect, implement, review, debug, test, and optimize Unity multiplayer across Netcode for GameObjects, Netcode for Entities, Unity Multiplayer Services, Photon Fusion/PUN/Quantum, Mirror, FishNet, Steamworks/Facepunch, Epic Online Services, PlayFab, custom authoritative servers, and mixed backend/transport stacks. Use for any networked gameplay, sessions, matchmaking, lobbies, relay, dedicated servers, RPCs, prediction, replication, authority, or online services.
+name: "multiplayer"
+description: "Architect, implement, review, debug, test, and optimize Unity multiplayer across Netcode for GameObjects, Netcode for Entities, Unity Multiplayer Services, Photon Fusion/PUN/Quantum, Mirror, FishNet, Steamworks/Facepunch, Epic Online Services, PlayFab, custom authoritative servers, and mixed backend/transport stacks. Use for any networked gameplay, sessions, matchmaking, lobbies, relay, dedicated servers, RPCs, prediction, replication, authority, or online services."
 ---
 
 # Unity Multiplayer — Provider-Aware Engineering

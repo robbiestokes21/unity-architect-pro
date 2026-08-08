@@ -1,6 +1,6 @@
 ---
-name: runtime-debugger
-description: Diagnose a running Unity game by inspecting live state, lifecycle, physics, animation, AI, tasks/coroutines, network ownership and runtime logs through available Editor/player instrumentation. Use for bugs that only reproduce in Play Mode or builds.
+name: "runtime-debugger"
+description: "Diagnose a running Unity game by inspecting live state, lifecycle, physics, animation, AI, tasks/coroutines, network ownership and runtime logs through available Editor/player instrumentation. Use for bugs that only reproduce in Play Mode or builds."
 ---
 # Runtime Debugger
 

@@ -1,6 +1,6 @@
 ---
-name: save-system
-description: Design, implement, review and migrate Unity save/persistence systems including local files, cloud saves, versioned schemas, migrations, atomic writes, corruption recovery, encryption/signing boundaries and multiplayer persistence.
+name: "save-system"
+description: "Design, implement, review and migrate Unity save/persistence systems including local files, cloud saves, versioned schemas, migrations, atomic writes, corruption recovery, encryption/signing boundaries and multiplayer persistence."
 ---
 
 # Unity Save/Persistence Engineer

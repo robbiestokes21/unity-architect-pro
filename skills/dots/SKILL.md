@@ -1,6 +1,6 @@
 ---
-name: dots
-description: Design, implement, review and optimize Unity DOTS/Entities/Burst/Jobs code. Use for ECS worlds, systems, bakers, components, jobs, NativeContainers, Burst, Netcode for Entities and hybrid GameObject/ECS projects.
+name: "dots"
+description: "Design, implement, review and optimize Unity DOTS/Entities/Burst/Jobs code. Use for ECS worlds, systems, bakers, components, jobs, NativeContainers, Burst, Netcode for Entities and hybrid GameObject/ECS projects."
 ---
 
 # Unity DOTS Engineer

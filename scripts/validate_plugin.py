@@ -7,9 +7,25 @@ try:
   if not meta.get(k): errors.append(f'missing plugin metadata: {k}')
 except Exception as e: errors.append(f'plugin.json: {e}')
 skills=list(root.glob('skills/*/SKILL.md'))
-for f in skills:
- t=f.read_text(errors='ignore')
- if not t.startswith('---\n') or '\nname:' not in t[:500] or '\ndescription:' not in t[:1000]: errors.append(f'bad skill frontmatter: {f}')
+agents=list(root.glob('agents/*.md'))
+for f in skills+agents:
+ t=f.read_text(encoding='utf-8', errors='replace')
+ kind='skill' if f in skills else 'agent'
+ if not t.startswith('---\n'):
+  errors.append(f'bad {kind} frontmatter (must start on line 1): {f}'); continue
+ parts=t.split('---', 2)
+ if len(parts)<3:
+  errors.append(f'bad {kind} frontmatter (missing closing delimiter): {f}'); continue
+ fields={}
+ for line in parts[1].splitlines():
+  if not line.strip(): continue
+  if ':' not in line:
+   errors.append(f'bad {kind} frontmatter line: {f}: {line}'); continue
+  key,value=line.split(':',1)
+  try: fields[key.strip()]=json.loads(value.strip())
+  except Exception as e: errors.append(f'bad {kind} YAML scalar: {f}: {key.strip()}: {e}')
+ for key in ('name','description'):
+  if not isinstance(fields.get(key),str) or not fields[key].strip(): errors.append(f'bad {kind} frontmatter {key}: {f}')
 for f in root.rglob('*.py'):
  try: compile(f.read_text(), str(f), 'exec')
  except Exception as e: errors.append(f'python syntax {f}: {e}')
@@ -19,4 +35,4 @@ if not errors:
  if result.returncode: errors.append('phase5 validation: '+result.stdout+result.stderr)
 if errors:
  print('\n'.join('ERROR: '+e for e in errors)); sys.exit(1)
-print(f'OK: {len(skills)} skills, {len(list(root.glob("agents/*.md")))} agents')
+print(f'OK: {len(skills)} skills, {len(agents)} agents')

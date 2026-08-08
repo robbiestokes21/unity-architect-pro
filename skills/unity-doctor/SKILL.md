@@ -1,6 +1,6 @@
 ---
-name: unity-doctor
-description: Perform a whole-project Unity health audit and produce a prioritized engineering report covering architecture, correctness, serialization, lifecycle, performance, testing, multiplayer/security, assets, build health and dependencies. Use for /unity-doctor style audits, inherited projects, pre-release reviews, or when deciding what technical debt to fix first.
+name: "unity-doctor"
+description: "Perform a whole-project Unity health audit and produce a prioritized engineering report covering architecture, correctness, serialization, lifecycle, performance, testing, multiplayer/security, assets, build health and dependencies. Use for /unity-doctor style audits, inherited projects, pre-release reviews, or when deciding what technical debt to fix first."
 ---
 
 # Unity Doctor

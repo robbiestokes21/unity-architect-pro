@@ -1,6 +1,6 @@
 ---
-name: ui-engineer
-description: Architect, implement, review and automate Unity UI using either uGUI or UI Toolkit. Use for runtime/editor UI, menus, HUDs, responsive layouts, navigation, data binding, accessibility and UI performance. Detect the project's UI stack and do not mix frameworks casually.
+name: "ui-engineer"
+description: "Architect, implement, review and automate Unity UI using either uGUI or UI Toolkit. Use for runtime/editor UI, menus, HUDs, responsive layouts, navigation, data binding, accessibility and UI performance. Detect the project's UI stack and do not mix frameworks casually."
 ---
 
 # Unity UI Engineer

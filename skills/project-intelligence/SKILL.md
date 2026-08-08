@@ -1,6 +1,6 @@
 ---
-name: project-intelligence
-description: Build and refresh a durable technical profile of a Unity project before substantial implementation. Detect Unity version, installed packages, render/input/network stacks, target settings, asmdefs, scenes, tests, architecture signals, build targets and project conventions. Use at the start of unfamiliar or large Unity work and whenever project structure materially changes.
+name: "project-intelligence"
+description: "Build and refresh a durable technical profile of a Unity project before substantial implementation. Detect Unity version, installed packages, render/input/network stacks, target settings, asmdefs, scenes, tests, architecture signals, build targets and project conventions. Use at the start of unfamiliar or large Unity work and whenever project structure materially changes."
 ---
 
 # Unity Project Intelligence

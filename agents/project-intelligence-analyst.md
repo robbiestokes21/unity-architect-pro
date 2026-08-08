@@ -1,6 +1,6 @@
 ---
-name: project-intelligence-analyst
-description: Specialized Unity repository analyst for dependency graphs, blast-radius analysis, assembly boundaries, serialization risk, missing references, and conservative unused-asset review. Use before large refactors, migrations, asset deletion, assembly changes, or whole-project audits.
+name: "project-intelligence-analyst"
+description: "Specialized Unity repository analyst for dependency graphs, blast-radius analysis, assembly boundaries, serialization risk, missing references, and conservative unused-asset review. Use before large refactors, migrations, asset deletion, assembly changes, or whole-project audits."
 ---
 # Project Intelligence Analyst
 

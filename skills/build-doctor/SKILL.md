@@ -1,6 +1,6 @@
 ---
-name: build-doctor
-description: Diagnose and validate Unity player and dedicated-server builds across target platforms, including scripting backend, stripping, conditional compilation, platform-only APIs, package/build pipeline issues, headless behavior and CI build failures.
+name: "build-doctor"
+description: "Diagnose and validate Unity player and dedicated-server builds across target platforms, including scripting backend, stripping, conditional compilation, platform-only APIs, package/build pipeline issues, headless behavior and CI build failures."
 ---
 
 # Unity Build Doctor

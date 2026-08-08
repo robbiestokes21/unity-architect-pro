@@ -1,6 +1,6 @@
 ---
-name: input-engineer
-description: Design, implement, migrate, and debug Unity input using the installed Input System or legacy input. Covers action maps, rebinding, devices, multiplayer local users, UI input, persistence, and generated wrappers.
+name: "input-engineer"
+description: "Design, implement, migrate, and debug Unity input using the installed Input System or legacy input. Covers action maps, rebinding, devices, multiplayer local users, UI input, persistence, and generated wrappers."
 ---
 # Unity Input Engineering
 

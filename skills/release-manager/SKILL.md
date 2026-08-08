@@ -1,6 +1,6 @@
 ---
-name: release-manager
-description: Coordinate Unity versioning, changelogs, artifacts, release notes, migration notes, GitHub releases and store/server release readiness. Use when preparing a tagged plugin or game release.
+name: "release-manager"
+description: "Coordinate Unity versioning, changelogs, artifacts, release notes, migration notes, GitHub releases and store/server release readiness. Use when preparing a tagged plugin or game release."
 ---
 # Release Manager
 

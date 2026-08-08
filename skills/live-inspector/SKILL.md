@@ -1,6 +1,6 @@
 ---
-name: live-inspector
-description: Inspect a real Unity Editor's loaded hierarchy, arbitrary serialized components/properties, prefab overrides, cameras, input, animation, navigation, lighting/rendering/physics and project settings; safely modify one serialized property with optimistic verification. Use for Phase 5 Inspector work.
+name: "live-inspector"
+description: "Inspect a real Unity Editor's loaded hierarchy, arbitrary serialized components/properties, prefab overrides, cameras, input, animation, navigation, lighting/rendering/physics and project settings; safely modify one serialized property with optimistic verification. Use for Phase 5 Inspector work."
 ---
 
 # Live Unity Inspector

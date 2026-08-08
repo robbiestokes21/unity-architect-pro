@@ -1,6 +1,6 @@
 ---
-name: gameplay-ai
-description: Architect and implement Unity gameplay AI: finite/hierarchical state machines, behavior trees, utility AI, perception, navigation, steering, combat decisions, spawning, LOD, and multiplayer authority. Use for NPC/enemy/companion AI systems.
+name: "gameplay-ai"
+description: "Architect and implement Unity gameplay AI: finite/hierarchical state machines, behavior trees, utility AI, perception, navigation, steering, combat decisions, spawning, LOD, and multiplayer authority. Use for NPC/enemy/companion AI systems."
 ---
 # Gameplay AI Engineering
 

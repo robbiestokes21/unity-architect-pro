@@ -1,6 +1,6 @@
 ---
-name: editor-control
-description: Safely operate or automate the Unity Editor: compile, enter/exit Play Mode, run editor methods, create/edit scenes and prefabs, add/configure components, inspect logs, refresh assets, and validate saved state. Use whenever a task changes Editor-managed assets or requires running Unity.
+name: "editor-control"
+description: "Safely operate or automate the Unity Editor: compile, enter/exit Play Mode, run editor methods, create/edit scenes and prefabs, add/configure components, inspect logs, refresh assets, and validate saved state. Use whenever a task changes Editor-managed assets or requires running Unity."
 ---
 
 # Unity Editor Control

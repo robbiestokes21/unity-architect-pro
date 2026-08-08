@@ -1,6 +1,6 @@
 ---
-name: observability
-description: Add production-grade Unity client/server observability: structured logs, crash/error context, metrics, traces, session/build identifiers, network diagnostics, privacy-conscious telemetry, and health/readiness signals.
+name: "observability"
+description: "Add production-grade Unity client/server observability: structured logs, crash/error context, metrics, traces, session/build identifiers, network diagnostics, privacy-conscious telemetry, and health/readiness signals."
 ---
 # Unity Observability
 

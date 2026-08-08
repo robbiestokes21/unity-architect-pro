@@ -1,6 +1,6 @@
 ---
-name: debug-fix
-description: Diagnose and fix Unity bugs, compile errors, exceptions, broken editor behavior, regressions, desyncs, race conditions, and test failures using evidence-driven reproduction and verification.
+name: "debug-fix"
+description: "Diagnose and fix Unity bugs, compile errors, exceptions, broken editor behavior, regressions, desyncs, race conditions, and test failures using evidence-driven reproduction and verification."
 ---
 
 # Unity Debugging and Fixing

@@ -1,6 +1,6 @@
 ---
-name: game-designer
-description: Design Unity gameplay content and systems—enemies, weapons, abilities, bosses, skill trees, loot, quests, achievements and economy—while respecting the existing architecture, data model and multiplayer constraints.
+name: "game-designer"
+description: "Design Unity gameplay content and systems—enemies, weapons, abilities, bosses, skill trees, loot, quests, achievements and economy—while respecting the existing architecture, data model and multiplayer constraints."
 ---
 # Game Designer
 

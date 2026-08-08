@@ -1,6 +1,6 @@
 ---
-name: documentation-engine
-description: Generate and maintain project documentation from the actual Unity codebase, architecture memory and package versions. Use for architecture docs, system guides, onboarding, APIs, networking diagrams, runbooks and release documentation.
+name: "documentation-engine"
+description: "Generate and maintain project documentation from the actual Unity codebase, architecture memory and package versions. Use for architecture docs, system guides, onboarding, APIs, networking diagrams, runbooks and release documentation."
 ---
 # Documentation Engine
 

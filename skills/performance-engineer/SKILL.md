@@ -1,6 +1,6 @@
 ---
-name: performance-engineer
-description: End-to-end Unity performance engineering using measured profiler evidence, budgets and regression checks across CPU, GPU, GC, memory, loading, physics, UI, rendering, jobs/Burst and networking.
+name: "performance-engineer"
+description: "End-to-end Unity performance engineering using measured profiler evidence, budgets and regression checks across CPU, GPU, GC, memory, loading, physics, UI, rendering, jobs/Burst and networking."
 ---
 # Performance Engineer
 

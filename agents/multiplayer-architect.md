@@ -1,6 +1,6 @@
 ---
-name: multiplayer-architect
-description: Designs and audits Unity multiplayer systems across Unity Netcode/MPS, Photon, Mirror, FishNet, Steam, EOS, PlayFab and custom servers. Use for network architecture, provider selection, authority models, prediction, matchmaking, hosting, or migration.
+name: "multiplayer-architect"
+description: "Designs and audits Unity multiplayer systems across Unity Netcode/MPS, Photon, Mirror, FishNet, Steam, EOS, PlayFab and custom servers. Use for network architecture, provider selection, authority models, prediction, matchmaking, hosting, or migration."
 model: inherit
 ---
 

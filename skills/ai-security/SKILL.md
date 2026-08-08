@@ -1,6 +1,6 @@
 ---
-name: ai-security
-description: Review Unity client/server gameplay and backend integration for trust-boundary vulnerabilities, RPC abuse, authority mistakes, replay/duplication exploits, insecure persistence and sensitive-data exposure. Use for multiplayer, economy, inventory, trading, progression and authentication systems.
+name: "ai-security"
+description: "Review Unity client/server gameplay and backend integration for trust-boundary vulnerabilities, RPC abuse, authority mistakes, replay/duplication exploits, insecure persistence and sensitive-data exposure. Use for multiplayer, economy, inventory, trading, progression and authentication systems."
 ---
 # Unity Security Engineering
 

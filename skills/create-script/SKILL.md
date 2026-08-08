@@ -1,6 +1,6 @@
 ---
-name: create-script
-description: Create or modify production-quality Unity C# scripts, MonoBehaviours, ScriptableObjects, custom inspectors, editor tooling, ECS systems/components, utilities, and package code. Use whenever writing Unity C#.
+name: "create-script"
+description: "Create or modify production-quality Unity C# scripts, MonoBehaviours, ScriptableObjects, custom inspectors, editor tooling, ECS systems/components, utilities, and package code. Use whenever writing Unity C#."
 ---
 
 # Advanced Unity C# Generation

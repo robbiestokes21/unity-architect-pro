@@ -1,6 +1,6 @@
 ---
-name: multiplayer-harness
-description: Build and run repeatable Unity multiplayer test harnesses with multiple clients/servers, local player instances, headless builds, network-condition simulation, structured logs, readiness checks, teardown, and result aggregation. Use for real end-to-end network verification.
+name: "multiplayer-harness"
+description: "Build and run repeatable Unity multiplayer test harnesses with multiple clients/servers, local player instances, headless builds, network-condition simulation, structured logs, readiness checks, teardown, and result aggregation. Use for real end-to-end network verification."
 ---
 # Multiplayer Harness
 

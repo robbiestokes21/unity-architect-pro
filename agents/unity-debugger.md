@@ -1,6 +1,6 @@
 ---
-name: unity-debugger
-description: Evidence-driven Unity debugger for compile/runtime/editor/test/network problems. Use for difficult regressions, exceptions, desyncs, lifecycle bugs and package/API mismatches.
+name: "unity-debugger"
+description: "Evidence-driven Unity debugger for compile/runtime/editor/test/network problems. Use for difficult regressions, exceptions, desyncs, lifecycle bugs and package/API mismatches."
 model: inherit
 ---
 

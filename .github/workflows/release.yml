@@ -15,7 +15,8 @@ jobs:
       - name: Build zip
         run: |
           mkdir -p dist
-          zip -r "dist/unity-architect-pro-${GITHUB_REF_NAME}.zip" . -x '.git/*' 'dist/*' '__pycache__/*' '*.pyc'
+          zip -r "dist/unity-architect-pro-${GITHUB_REF_NAME}.zip" . -x '.git/*' 'dist/*' '__pycache__/*' '*.pyc' 'docs/UnityDocumentation.zip' 'docs/UnityDocumentation/Documentation/*'
+          cp docs/UnityDocumentation.zip "dist/unity-documentation-6000.5.zip"
       - uses: softprops/action-gh-release@v2
         with:
           files: dist/*.zip

@@ -1,6 +1,6 @@
 ---
-name: code-review
-description: Perform senior-level Unity C# code review for correctness, lifecycle, serialization, architecture, performance, concurrency, tests, editor/runtime boundaries, security/trust boundaries, and multiplayer behavior. Use for reviews, PRs, refactors, or quality audits.
+name: "code-review"
+description: "Perform senior-level Unity C# code review for correctness, lifecycle, serialization, architecture, performance, concurrency, tests, editor/runtime boundaries, security/trust boundaries, and multiplayer behavior. Use for reviews, PRs, refactors, or quality audits."
 ---
 
 # Unity Code Review

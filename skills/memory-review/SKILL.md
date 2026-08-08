@@ -1,6 +1,6 @@
 ---
-name: memory-review
-description: Audit Unity Architect Pro project memory for expired, aging, low-confidence, contradictory, superseded, or unresolved engineering knowledge. Use after migrations, package/network changes, large refactors, releases, or whenever remembered context may be stale.
+name: "memory-review"
+description: "Audit Unity Architect Pro project memory for expired, aging, low-confidence, contradictory, superseded, or unresolved engineering knowledge. Use after migrations, package/network changes, large refactors, releases, or whenever remembered context may be stale."
 ---
 # Memory Review
 

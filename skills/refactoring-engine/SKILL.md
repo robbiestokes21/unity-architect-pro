@@ -1,6 +1,6 @@
 ---
-name: refactoring-engine
-description: Perform safe cross-file Unity refactors with serialization, scene/prefab, asmdef and package awareness. Use for splitting god classes, renaming serialized members/types, moving assemblies, introducing interfaces, or replacing architecture without breaking assets.
+name: "refactoring-engine"
+description: "Perform safe cross-file Unity refactors with serialization, scene/prefab, asmdef and package awareness. Use for splitting god classes, renaming serialized members/types, moving assemblies, introducing interfaces, or replacing architecture without breaking assets."
 ---
 # Refactoring Engine
 

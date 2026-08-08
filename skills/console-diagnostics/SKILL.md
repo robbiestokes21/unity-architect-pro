@@ -1,6 +1,6 @@
 ---
-name: console-diagnostics
-description: Read, classify, deduplicate, and trace Unity Console/Editor.log/player/server logs. Use for compile errors, exceptions, warnings, domain reload problems, build failures, multiplayer disconnects, or runtime regressions.
+name: "console-diagnostics"
+description: "Read, classify, deduplicate, and trace Unity Console/Editor.log/player/server logs. Use for compile errors, exceptions, warnings, domain reload problems, build failures, multiplayer disconnects, or runtime regressions."
 ---
 # Console and Log Diagnostics
 

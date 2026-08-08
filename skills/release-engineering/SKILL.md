@@ -1,6 +1,6 @@
 ---
-name: release-engineering
-description: Prepare Unity projects for repeatable releases: versioning, CI, automated tests/builds, artifacts, symbols, changelogs, signing boundaries, dedicated-server images, deployment checks and platform distribution workflows.
+name: "release-engineering"
+description: "Prepare Unity projects for repeatable releases: versioning, CI, automated tests/builds, artifacts, symbols, changelogs, signing boundaries, dedicated-server images, deployment checks and platform distribution workflows."
 ---
 
 # Unity Release Engineer

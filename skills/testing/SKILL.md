@@ -1,6 +1,6 @@
 ---
-name: testing
-description: Design, write, run and interpret Unity EditMode, PlayMode, integration, scene, build/player, and multiplayer tests. Use whenever verifying Unity behavior or adding regression coverage.
+name: "testing"
+description: "Design, write, run and interpret Unity EditMode, PlayMode, integration, scene, build/player, and multiplayer tests. Use whenever verifying Unity behavior or adding regression coverage."
 ---
 
 # Unity Testing

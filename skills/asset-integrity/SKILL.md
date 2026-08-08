@@ -1,6 +1,6 @@
 ---
-name: asset-integrity
-description: Audit Unity asset/meta GUID integrity, missing references, duplicate GUID risks, import settings, Resources usage, scene/prefab dependencies, and accidental asset churn. Use before releases, migrations, large refactors, or suspicious merge conflicts.
+name: "asset-integrity"
+description: "Audit Unity asset/meta GUID integrity, missing references, duplicate GUID risks, import settings, Resources usage, scene/prefab dependencies, and accidental asset churn. Use before releases, migrations, large refactors, or suspicious merge conflicts."
 ---
 # Asset Integrity
 

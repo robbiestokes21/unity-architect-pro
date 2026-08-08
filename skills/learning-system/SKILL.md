@@ -1,6 +1,6 @@
 ---
-name: learning-system
-description: Infer and maintain project-specific Unity conventions from repeated verified patterns—folder structure, naming, DI, async, pooling, networking and preferred packages—without overriding explicit project rules. Use to adapt Claude behavior to a codebase over time.
+name: "learning-system"
+description: "Infer and maintain project-specific Unity conventions from repeated verified patterns—folder structure, naming, DI, async, pooling, networking and preferred packages—without overriding explicit project rules. Use to adapt Claude behavior to a codebase over time."
 ---
 # Project Learning System
 
