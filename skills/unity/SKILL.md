@@ -27,6 +27,7 @@ Load/use the appropriate sibling skill:
 - `multiplayer`: any online/networked feature
 - `docs-research`: Unity/API/package questions where version matters
 - `debug-fix`: errors, exceptions, broken behavior, regressions
+- `runtime-debugger`: live object, FSM/AI, network ownership, async-operation and runtime-metric diagnosis
 - `testing`: EditMode/PlayMode/integration/network tests
 - `performance`: CPU/GPU/GC/memory/loading/network performance
 - `architecture`: larger feature/system design

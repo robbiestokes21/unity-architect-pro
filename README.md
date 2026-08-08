@@ -2,7 +2,11 @@
 
 Unity Architect Pro is a multi-skill, multi-agent Unity engineering system for Claude Code. It is designed to behave more like a senior Unity engineering team than a single code-generation prompt: inspect the real project first, design within its architecture, operate the Editor safely, implement, review, test, profile, build, and only then declare work complete.
 
-> Version: **2.0.0-alpha.6** — Phase 5 Live Unity Inspector.
+> Version: **2.0.0-alpha.7** — Phase 6 Runtime Debugger.
+
+## Runtime Debugger (alpha.7)
+
+Alpha.7 adds package-neutral live runtime diagnostics: object/physics/Animator snapshots, explicit FSM and AI state adapters, networking ownership/spawn/authority adapters, bounded task/coroutine/job/request lifecycle tracking, lightweight runtime metrics, selected-object Editor capture, JSON/JSONL evidence, and cleanup/safety contracts. It also fixes frontmatter validation for valid YAML plain scalars such as `model: inherit`.
 
 ## Live Unity Inspector (alpha.6)
 
@@ -63,6 +67,7 @@ Self-Review Definition of Done
 | `release-engineering` | CI, artifacts, versioning, deployment and server images |
 | `live-editor` | Live Unity Editor capability discovery, inspection and transactional operation |
 | `live-inspector` | Phase 5 full-project/selection inspection and guarded serialized-property mutation |
+| `runtime-debugger` | Phase 6 live object/FSM/AI/network/operation state and runtime metrics |
 | `hierarchy-inspector` | Scene/prefab/component/serialized-state inspection |
 | `console-diagnostics` | Current-run Console, Editor/Player/server log diagnosis |
 | `visual-verification` | Game View/UI/rendering screenshot verification |

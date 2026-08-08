@@ -9,6 +9,7 @@
 - [x] Phase 3: evidence-backed project graph, reverse impact analysis, asmdef cycles, serialized GUID integrity and conservative unused-asset candidates
 - [x] Phase 4: versioned engineering memory with migration, search, incidents, ADRs, performance history, confidence/expiry and stale-memory review
 - [x] Phase 5: live hierarchy/component/property, prefab, camera, input, animation, navigation, lighting/rendering/physics/project-settings inspection and guarded serialized mutation
+- [x] Phase 6: live object, FSM/AI, networking ownership, task/coroutine lifecycle and bounded runtime-metric diagnostics
 - [x] Runtime debugger/probe workflow
 - [x] Gameplay QA and visual AI skills
 - [x] Performance/security/build-farm/release-manager skills
@@ -18,3 +19,4 @@
 - [ ] Optional semantic project index backend
 - [ ] Marketplace release after alpha validation across real projects
 - [ ] Validate Phase 5 templates in a Unity 2022 LTS project and a Unity 6 project with URP, Input System and AI Navigation installed
+- [ ] Validate Phase 6 probes in Unity 2022 LTS and Unity 6 with domain reload on/off and provider-specific network adapters

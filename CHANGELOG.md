@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.0.0-alpha.7 — Phase 6: Runtime Debugger
+
+- Expanded runtime diagnostics from a periodic transform log into structured object, physics, Animator, FSM/AI, network ownership, operation and runtime-metric snapshots.
+- Added package-neutral `IRuntimeStateDiagnostics` and `IRuntimeNetworkDiagnostics` adapters plus a bounded task/coroutine/job/request lifecycle registry.
+- Added a Play Mode selected-object debugger window, JSON/JSONL evidence, safety/limitations contract, specialist agent, fixtures and validation.
+- Fixed CI frontmatter validation to accept conservative valid YAML plain scalars such as `model: inherit`.
+
 ## 2.0.0-alpha.6 — Phase 5: Live Unity Inspector
 
 - Added full loaded-scene hierarchy and arbitrary visible `SerializedProperty` inspection with bounded JSON evidence output.

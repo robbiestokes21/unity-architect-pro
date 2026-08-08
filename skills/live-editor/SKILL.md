@@ -42,6 +42,8 @@ For scene/prefab tasks, inspect hierarchy paths, active state, prefab instance s
 ## Runtime intelligence
 In Play Mode, distinguish runtime instances from persisted assets. Capture relevant runtime state before stopping Play Mode. Never claim a runtime change persisted unless the underlying serialized asset was intentionally saved through an Editor workflow.
 
+Route deep live-state diagnosis to `runtime-debugger`, including explicit FSM/AI adapters, network ownership adapters, registered task/coroutine lifecycles and bounded runtime metrics. The live-editor skill owns the Editor session; runtime-debugger owns diagnostic evidence.
+
 ## Evidence
 A live-editor claim should be backed by at least one of: inspected property value, hierarchy result, clean Console slice, screenshot, passing test, profiler metric, or build/run result. Route screenshots to `visual-verification`, logs to `console-diagnostics`, and performance evidence to `profiler-capture`.
 

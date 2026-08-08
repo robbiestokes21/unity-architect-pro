@@ -5,6 +5,8 @@ description: "Diagnose and fix Unity bugs, compile errors, exceptions, broken ed
 
 # Unity Debugging and Fixing
 
+For Play Mode/build-only failures, route to `runtime-debugger` after establishing a reproducible window. Correlate its object/FSM/network/operation snapshots with logs rather than inferring runtime state from source alone.
+
 ## Workflow
 1. Capture the exact symptom, stack trace/log, platform, scene/state and reproduction path.
 2. Inspect recent/relevant code and configuration.
