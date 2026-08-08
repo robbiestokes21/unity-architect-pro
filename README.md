@@ -2,7 +2,23 @@
 
 Unity Architect Pro is a multi-skill, multi-agent Unity engineering system for Claude Code. It is designed to behave more like a senior Unity engineering team than a single code-generation prompt: inspect the real project first, design within its architecture, operate the Editor safely, implement, review, test, profile, build, and only then declare work complete.
 
-> Version: **2.0.0-alpha.9** — Phase 8 Gameplay Testing.
+> Version: **2.0.0-alpha.10** — Phases 9–10 Visual QA and Performance AI.
+
+## Visual QA and Performance AI (alpha.10)
+
+Alpha.10 connects deterministic Phase 8 gameplay checkpoints to two independent quality gates. Visual QA captures camera output at configured resolutions, compares it with an explicitly approved readable baseline, honors optional ignore masks, produces mismatch heatmaps, and audits selected UI bounds, overlap, materials, and shaders. Performance AI separates warmup from measurement and reports frame, main-thread CPU, GPU, per-frame GC, memory, and project-defined metrics using p50/p95/p99 values and platform-specific budgets. A comparison tool rejects excessive regressions against a comparable baseline, and an Editor menu validates scene gate configuration before a run.
+
+### Using the Phase 9 visual skill
+
+Ask Claude Code: `Use visual-verification to add a 1920x1080 baseline check at the inventory-open gameplay checkpoint.` Add `VisualQaRunner` to a development-only test scene, configure a camera and readable baseline texture, set per-channel and mismatch tolerances, and optionally assign an alpha mask where nonzero alpha marks dynamic pixels to ignore. Run the Phase 8 scenario and retain the current PNG, heatmap PNG, and `*-visual-result.json`. Baseline creation or replacement is a reviewed action; the runner never approves a changed image automatically.
+
+### Using the Phase 10 performance skill
+
+Ask Claude Code: `Use profiler-capture and performance-engineer to measure the combat-wave scenario against our Windows quality-high budgets.` Add `PerformanceBudgetProbe` to a development-only test scene, set warmup/measurement frames and target-specific budgets, then run the same deterministic Phase 8 journey in a representative player build. Retain `*-performance-result.json`; compare it with a compatible baseline using `python skills/profiler-capture/scripts/compare_performance_reports.py baseline.json current.json --maximum-regression-percent 10`. Editor captures are diagnostic only unless the acceptance target is explicitly the Editor.
+
+Visual and performance verdicts remain separate: passing one never hides failure in the other.
+
+See [`docs/PHASE9-10-USAGE.md`](docs/PHASE9-10-USAGE.md) for installation steps, baseline rules, evidence requirements, comparison commands, and example prompts.
 
 ## Gameplay Testing (alpha.9)
 
@@ -80,6 +96,8 @@ Self-Review Definition of Done
 | `console-diagnostics` | Current-run Console, Editor/Player/server log diagnosis |
 | `visual-verification` | Game View/UI/rendering screenshot verification |
 | `profiler-capture` | Evidence-based CPU/GPU/GC/memory/network performance captures |
+| `visual-ai` | Phase 9 baseline, heatmap and semantic visual analysis |
+| `performance-engineer` | Phase 10 budget and regression analysis across target platforms |
 | `multiplayer-harness` | Multi-client/server process and network-fault test harnesses |
 | `multiplayer-lab-operator` | Phase 7 process/fault scenario execution and evidence specialist |
 | `gameplay-tester` | Phase 8 deterministic gameplay journeys, assertions and evidence |

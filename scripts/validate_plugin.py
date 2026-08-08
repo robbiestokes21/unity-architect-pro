@@ -46,6 +46,9 @@ if not errors:
 if not errors:
  result=subprocess.run([sys.executable, str(root/'scripts/validate_phase8.py')], capture_output=True, text=True)
  if result.returncode: errors.append('phase8 validation: '+result.stdout+result.stderr)
+if not errors:
+ result=subprocess.run([sys.executable, str(root/'scripts/validate_phase9_10.py')], capture_output=True, text=True)
+ if result.returncode: errors.append('phase9-10 validation: '+result.stdout+result.stderr)
 if errors:
  print('\n'.join('ERROR: '+e for e in errors)); sys.exit(1)
 print(f'OK: {len(skills)} skills, {len(agents)} agents')

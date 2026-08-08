@@ -10,6 +10,10 @@ namespace UnityArchitectPro.GameplayTesting
     [DisallowMultipleComponent]
     public sealed class GameplayScenarioRunner : MonoBehaviour
     {
+        public static event Action<string> ScenarioStarted;
+        public static event Action<string> StepStarted;
+        public static event Action<string> StepCompleted;
+        public static event Action<string, bool> ScenarioCompleted;
         [Serializable] public sealed class AssertionEvidence { public string kind; public string target; public string expected; public string actual; public bool passed; public string message; public float elapsedSeconds; }
         [Serializable] public sealed class StepEvidence { public string id; public string action; public string target; public string result; public float durationSeconds; public AssertionEvidence[] assertions; public GameplayStateValue[] state; public string screenshot; public string failure; }
         [Serializable] public sealed class ScenarioResult { public int schemaVersion = 1; public string scenarioId; public string scenarioName; public int seed; public string startedUtc; public string finishedUtc; public string result; public float durationSeconds; public StepEvidence[] steps; public string failure; }
@@ -58,11 +62,13 @@ namespace UnityArchitectPro.GameplayTesting
                 Validate(scenario);
                 result.scenarioId = scenario.id; result.scenarioName = scenario.name; result.seed = scenario.seed;
                 UnityEngine.Random.InitState(scenario.seed);
+                Notify(ScenarioStarted, scenario.id);
                 var context = new GameplayTestContext { Scenario = scenario };
                 for (var index = 0; index < scenario.steps.Length; index++)
                 {
                     if (Now() - started > scenario.timeoutSeconds) throw new TimeoutException("Scenario timeout exceeded.");
                     context.StepIndex = index; context.Step = scenario.steps[index];
+                    Notify(StepStarted, context.Step.id);
                     var stepEvidence = new StepEvidence { id = context.Step.id, action = context.Step.action.kind, target = context.Step.action.target, result = "failed" };
                     evidence.Add(stepEvidence);
                     var stepStarted = Now();
@@ -73,6 +79,7 @@ namespace UnityArchitectPro.GameplayTesting
                     if (!string.IsNullOrEmpty(stepEvidence.failure)) throw new InvalidOperationException(stepEvidence.failure);
                     if (scenario.captureStateAfterEachStep || context.Step.captureState) stepEvidence.state = CaptureState(context);
                     stepEvidence.durationSeconds = Now() - stepStarted; stepEvidence.result = "passed";
+                    Notify(StepCompleted, context.Step.id);
                 }
                 result.result = "passed";
             }
@@ -95,6 +102,7 @@ namespace UnityArchitectPro.GameplayTesting
                 }
                 result.steps = evidence.ToArray(); result.durationSeconds = Now() - started; result.finishedUtc = DateTime.UtcNow.ToString("O");
                 WriteResult(result);
+                Notify(ScenarioCompleted, result.scenarioId, result.result == "passed");
                 Debug.Log(result.result == "passed" ? "UAP_TEST_COMPLETE" : "UAP_TEST_FAILED " + result.failure, this);
                 _running = null;
             }
@@ -179,6 +187,16 @@ namespace UnityArchitectPro.GameplayTesting
         private float Now() { return useUnscaledTime ? Time.unscaledTime : Time.time; }
         private IEnumerator Wait(float seconds) { var until = Now() + seconds; while (Now() < until) yield return null; }
         private static string SafeName(string value) { if (string.IsNullOrEmpty(value)) return "scenario"; foreach (var invalid in Path.GetInvalidFileNameChars()) value = value.Replace(invalid, '_'); return value; }
+        private void Notify(Action<string> handlers, string value)
+        {
+            if (handlers == null) return;
+            foreach (Action<string> handler in handlers.GetInvocationList()) try { handler(value); } catch (Exception error) { Debug.LogWarning("[UAP-GAMEPLAY] Observer failed: " + error.Message, this); }
+        }
+        private void Notify(Action<string, bool> handlers, string value, bool passed)
+        {
+            if (handlers == null) return;
+            foreach (Action<string, bool> handler in handlers.GetInvocationList()) try { handler(value, passed); } catch (Exception error) { Debug.LogWarning("[UAP-GAMEPLAY] Observer failed: " + error.Message, this); }
+        }
         private static void Validate(GameplayScenario scenario)
         {
             if (scenario == null || scenario.schemaVersion != 1) throw new InvalidOperationException("Unsupported gameplay scenario schema.");

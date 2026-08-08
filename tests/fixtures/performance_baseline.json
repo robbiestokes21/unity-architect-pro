@@ -1,0 +1,1 @@
+{"schemaVersion":1,"scenarioId":"fixture","verdict":"passed","metrics":[{"name":"frameTime","unit":"ms","available":true,"p50":10,"p95":12,"p99":14,"maximum":16,"budget":16.6,"passed":true}]}

@@ -23,3 +23,11 @@ Route multiplayer bandwidth/tick findings to `network-performance-analyzer`. Rou
 
 ## Runtime probe template
 `assets/RuntimePerformanceProbe.cs` demonstrates a development-only `ProfilerRecorder` probe. Counter names/availability vary by Unity version and platform; verify them before installing. Do not ship diagnostic logging by accident.
+
+## Phase 10 setup and use
+
+Use `assets/PerformanceBudgetProbe.cs` for a bounded capture tied to Phase 8 scenario start. Configure a representative warmup, measurement frame count and platform/quality-specific budgets. Zero budgets mean informational metrics; they do not fail the run. Implement `IPerformanceMetricSource` for loading, network, server tick or domain counters not exposed by the portable probe.
+
+The probe writes JSON under `Application.persistentDataPath/UnityArchitectPro/Performance`. Compare only like-for-like scenario, platform, quality, build type, content and topology reports with `scripts/compare_performance_reports.py`. A budget pass and a regression pass are distinct requirements.
+
+Example request: `Use profiler-capture to run the combat-wave gameplay scenario in a Windows development player, enforce our p95 frame/CPU/GPU/GC budgets, and compare it with the approved baseline.`

@@ -44,6 +44,8 @@ Load/use the appropriate sibling skill:
 - `console-diagnostics`: current-run Console and log diagnosis
 - `visual-verification`: Game View/UI/rendering screenshot verification
 - `profiler-capture`: evidence-based profiling and performance comparisons
+- `visual-ai`: Phase 9 interpretation of baseline differences, heatmaps and layout evidence
+- `performance-engineer`: Phase 10 budget failures and comparable regression analysis
 - `multiplayer-harness`: Phase 7 dedicated server/client laboratory, late join/reconnect and explicit fault-controller scenarios
 - `gameplay-tester`: Phase 8 deterministic player journeys, timed assertions, state/failure evidence and project adapters
 - `gameplay-ai`: NPC decision/navigation/perception systems

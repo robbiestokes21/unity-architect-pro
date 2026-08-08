@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.0.0-alpha.10 — Phases 9–10: Visual QA and Performance AI
+
+- Added gameplay-checkpoint camera capture, reviewed readable baselines, ignore masks, configurable pixel tolerances, current images, heatmaps and structured visual verdicts.
+- Added explicit UI clipping/overlap and missing material/shader audit hooks without optional UI package dependencies.
+- Added representative warmup/measurement windows and p50/p95/p99 budgets for frame time, CPU, GPU, GC, memory and project-defined metrics.
+- Added baseline regression comparison, schemas, fixtures, validation, user instructions and independent visual/performance result markers.
+- Published Phase 11 Security AI and Phases 12–18 follow-on scope in the roadmap.
+
 ## 2.0.0-alpha.9 — Phase 8: Gameplay Testing
 
 - Added versioned, deterministic gameplay scenarios with project-owned action/assertion adapters and a package-neutral transform smoke adapter.
