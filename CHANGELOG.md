@@ -38,7 +38,6 @@
 - Added filesystem asset integrity scanner, log parser and extended project facts scripts.
 - Extended master routing, testing and self-review gates to consume runtime evidence.
 
-
 ## 2.0.0-alpha.1
 
 - Added `project-intelligence` with a local Unity project indexer.
