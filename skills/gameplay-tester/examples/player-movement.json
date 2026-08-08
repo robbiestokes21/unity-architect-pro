@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "player-movement-smoke",
+  "seed": 12345,
+  "captureStateAfterEachStep": true,
+  "steps": [
+    {
+      "id": "move-forward",
+      "action": { "adapter": "transform", "kind": "translate", "timeoutSeconds": 2, "parameters": [{"key":"x","value":"0"},{"key":"y","value":"0"},{"key":"z","value":"1"}] },
+      "assertions": [{ "adapter": "transform", "kind": "position", "timeoutSeconds": 1, "parameters": [{"key":"x","value":"0"},{"key":"y","value":"0"},{"key":"z","value":"1"},{"key":"tolerance","value":"0.01"}] }]
+    }
+  ]
+}

@@ -45,6 +45,7 @@ Load/use the appropriate sibling skill:
 - `visual-verification`: Game View/UI/rendering screenshot verification
 - `profiler-capture`: evidence-based profiling and performance comparisons
 - `multiplayer-harness`: Phase 7 dedicated server/client laboratory, late join/reconnect and explicit fault-controller scenarios
+- `gameplay-tester`: Phase 8 deterministic player journeys, timed assertions, state/failure evidence and project adapters
 - `gameplay-ai`: NPC decision/navigation/perception systems
 - `input-engineer`: Input System/legacy input, rebinding and local multiplayer
 - `asset-integrity`: GUID/meta/reference/import integrity

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Unity Architect Pro gameplay result",
+  "type": "object",
+  "required": ["schemaVersion", "scenarioId", "result", "startedUtc", "finishedUtc", "steps"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "scenarioId": { "type": "string" },
+    "result": { "enum": ["passed", "failed"] },
+    "startedUtc": { "type": "string" },
+    "finishedUtc": { "type": "string" },
+    "failure": { "type": "string" },
+    "steps": { "type": "array" }
+  }
+}

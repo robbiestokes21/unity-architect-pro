@@ -1,0 +1,1 @@
+{"schemaVersion":1,"id":"fixture","seed":42,"captureStateAfterEachStep":true,"steps":[{"id":"move","action":{"adapter":"transform","kind":"translate","timeoutSeconds":2,"parameters":[{"key":"z","value":"1"}]},"assertions":[{"adapter":"transform","kind":"position","timeoutSeconds":1,"parameters":[{"key":"z","value":"1"}]}]}]}

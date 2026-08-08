@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.0.0-alpha.9 — Phase 8: Gameplay Testing
+
+- Added versioned, deterministic gameplay scenarios with project-owned action/assertion adapters and a package-neutral transform smoke adapter.
+- Added bounded execution, seeded runs, per-step state evidence, JSON results, failure screenshots and guaranteed cleanup.
+- Added an Editor validator, schemas, example/fixture, gameplay QA agent, static tests and Phase 7 marker interoperability.
+
 ## 2.0.0-alpha.8 — Phase 7: Multiplayer Laboratory
 
 - Added scenario-driven dedicated server/client orchestration with dependency readiness, late join, expected stop and restart/reconnect actions.

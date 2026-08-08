@@ -32,3 +32,7 @@ For release-significant online behavior, route to `multiplayer-harness`. Prefer 
 
 ## Visual and performance tests
 Route visible acceptance criteria to `visual-verification` and budget assertions/measurements to `profiler-capture`. Keep correctness and performance verdicts separate.
+
+## Player-journey scenarios
+
+Route end-to-end acceptance criteria to `gameplay-tester`. Use versioned scenarios, explicit project adapters, deterministic seeds, bounded timeouts and structured evidence. Phase 8 scenarios complement focused unit, EditMode and PlayMode regression tests; they do not replace them.
