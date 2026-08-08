@@ -6,6 +6,6 @@ __pycache__/
 dist/
 *.log
 .claude/unity/project.db
-
+.claude/settings.local.json
 # Local extraction of the optional Unity documentation archive.
 /docs/UnityDocumentation/Documentation/
