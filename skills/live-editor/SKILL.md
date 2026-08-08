@@ -7,6 +7,8 @@ description: "Operate a connected Unity Editor as a live engineering surface: in
 
 Treat the Editor as stateful infrastructure. Never assume the open scene, Play Mode state, selected object, compile state, or domain state.
 
+When the bridge is MCP, load `mcp-unity` and follow `../../mcp/README.md`. Discover live resources/tools and select the intended Editor instance before this skill's capability handshake.
+
 ## Capability handshake
 Before acting, discover the available Editor bridge and map only capabilities that really exist:
 - project/editor identity and Unity version

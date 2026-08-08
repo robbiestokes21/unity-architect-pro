@@ -1,6 +1,6 @@
 # Recommended Unity Editor Integration Capabilities
 
-The plugin does not hard-code one MCP provider. When choosing/configuring an integration, prefer one that exposes most of these capabilities:
+The plugin ships an optional recommended MCP for Unity configuration in `.mcp.json` and `mcp/`, while keeping runtime behavior capability-based. When choosing/configuring that or another integration, prefer one that exposes most of these capabilities:
 
 - identify open Unity project and editor version
 - read compilation status/errors
@@ -15,6 +15,8 @@ The plugin does not hard-code one MCP provider. When choosing/configuring an int
 
 ## Tool discovery rule
 Claude must inspect the tools exposed in the current session and map them to these capabilities. It must not assume names such as `run_method_in_unity`, `unity_play_control`, or `run_unity_tests` exist unless the connected integration actually exposes them.
+
+For MCP connections, use the `mcp-unity` handshake: confirm connection, read Editor/project state, explicitly select among multiple instances, and only then map observed tools/resources to capabilities.
 
 ## Concurrency rule
 Calls that can trigger compilation, domain reload, scene reload, Play Mode transition, asset import or test execution must be serialized. Wait for completion before the next Unity state-changing action.

@@ -14,6 +14,7 @@
 - [x] Phase 8: deterministic player-journey scenarios, project adapters, timed assertions, state/failure evidence and cleanup
 - [x] Phase 9: checkpoint-driven visual captures, approved-baseline comparison, ignore masks, heatmaps and layout/material audits
 - [x] Phase 10: warmup/measurement windows, CPU/GPU/frame/GC/memory budgets, percentile reports and baseline regression comparison
+- [x] MCP foundation: optional loopback Unity bridge configuration, capability discovery, multi-instance selection, serialized mutation rules, client examples and validation
 - [x] Runtime debugger/probe workflow
 - [x] Gameplay QA and visual AI skills
 - [x] Performance/security/build-farm/release-manager skills
@@ -29,7 +30,7 @@
 
 ## Next: Phase 11 — Security AI
 
-Phase 11 will add evidence-based Unity security review for client/server trust boundaries, RPC and command authorization, ownership validation, rate limits, replay/duplication resistance, secrets and unsafe storage, save/config tampering, insecure transport configuration, dependency advisories, build leakage, and structured findings with severity, evidence and remediation. It will integrate with Phase 7 multiplayer scenarios and Phase 8 hostile/invalid player journeys without presenting static heuristics as proof of exploitability.
+Phase 11 will add evidence-based Unity security review for client/server trust boundaries, RPC and command authorization, ownership validation, rate limits, replay/duplication resistance, secrets and unsafe storage, save/config tampering, insecure transport configuration, dependency advisories, build leakage, MCP exposure/configuration, and structured findings with severity, evidence and remediation. It will integrate with the live MCP evidence loop, Phase 7 multiplayer scenarios, and Phase 8 hostile/invalid player journeys without presenting static heuristics as proof of exploitability.
 
 ## Planned after Phase 11
 

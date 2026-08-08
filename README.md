@@ -2,7 +2,13 @@
 
 Unity Architect Pro is a multi-skill, multi-agent Unity engineering system for Claude Code. It is designed to behave more like a senior Unity engineering team than a single code-generation prompt: inspect the real project first, design within its architecture, operate the Editor safely, implement, review, test, profile, build, and only then declare work complete.
 
-> Version: **2.0.0-alpha.10** — Phases 9–10 Visual QA and Performance AI.
+> Version: **2.0.0-alpha.10.1** — Phases 9–10 plus optional Unity MCP integration.
+
+## Unity MCP integration (alpha.10.1)
+
+Unity Architect Pro now includes plugin/project MCP configuration for a live Unity Editor, a dedicated `mcp-unity` skill, client examples, connection validation, and resource-first operating safeguards. The default configuration connects to CoplayDev MCP for Unity over loopback HTTP at `http://localhost:8080/mcp`; the third-party Unity package is optional and is never installed silently.
+
+Install the reviewed/pinned Unity package with `https://github.com/CoplayDev/unity-mcp.git?path=/MCPForUnity#v10.0.0`, open **Window → MCP for Unity**, start the bridge, then review and approve the project MCP server in your client. Marketplace submission configuration is available in [`mcp/marketplace-config.json`](mcp/marketplace-config.json); setup, VS Code, stdio, troubleshooting, and safety instructions are in [`mcp/README.md`](mcp/README.md).
 
 ## Visual QA and Performance AI (alpha.10)
 
@@ -90,6 +96,7 @@ Self-Review Definition of Done
 | `save-system` | Versioned persistence, migrations, cloud/local save safety |
 | `release-engineering` | CI, artifacts, versioning, deployment and server images |
 | `live-editor` | Live Unity Editor capability discovery, inspection and transactional operation |
+| `mcp-unity` | Connect, discover and safely operate a live Unity Editor through MCP |
 | `live-inspector` | Phase 5 full-project/selection inspection and guarded serialized-property mutation |
 | `runtime-debugger` | Phase 6 live object/FSM/AI/network/operation state and runtime metrics |
 | `hierarchy-inspector` | Scene/prefab/component/serialized-state inspection |

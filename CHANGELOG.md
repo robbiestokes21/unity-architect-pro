@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.0.0-alpha.10.1 — Unity MCP integration
+
+- Added plugin/project and marketplace-ready loopback HTTP configuration for the optional CoplayDev MCP for Unity bridge, plus VS Code and stdio examples.
+- Added the `mcp-unity` skill with resource-first discovery, explicit multi-instance selection, serialized mutation, compilation/Console checks and evidence-based verification.
+- Added installation, approval, troubleshooting and security guidance; the external Unity package remains pinned, reviewed and opt-in rather than vendored or silently installed.
+- Added MCP configuration validation and routed master/live-editor behavior through the shared connection contract before Phase 11.
+
 ## 2.0.0-alpha.10 — Phases 9–10: Visual QA and Performance AI
 
 - Added gameplay-checkpoint camera capture, reviewed readable baselines, ignore masks, configurable pixel tolerances, current images, heatmaps and structured visual verdicts.

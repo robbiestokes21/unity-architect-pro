@@ -39,6 +39,7 @@ Load/use the appropriate sibling skill:
 - `build-doctor`: player/dedicated-server build failures and validation
 - `release-engineering`: CI, artifacts, release pipelines and server images
 - `live-editor`: inspect and operate the actual running Unity Editor
+- `mcp-unity`: connect to a live Unity Editor, discover MCP capabilities/instances and enforce the safe operation loop
 - `live-inspector`: deep hierarchy/component/project-settings inspection and guarded serialized-property changes
 - `hierarchy-inspector`: inspect scenes/prefabs/components/serialized wiring
 - `console-diagnostics`: current-run Console and log diagnosis
@@ -71,7 +72,7 @@ For large tasks, combine skills instead of forcing everything through this file.
 10. Verify changes: compile -> targeted tests -> broader tests -> runtime/editor validation as appropriate.
 
 ## Unity Editor tool discipline
-If Unity Editor/MCP tools are connected, discover their actual names/capabilities first. Do not invent tools. Run stateful Unity Editor actions serially, especially actions that can trigger compilation or domain reload. If no Editor integration exists, generate safe editor scripts/CLI instructions instead of pretending to control Unity.
+If Unity Editor/MCP tools are connected, load `mcp-unity`, discover their actual resources/names/capabilities first, read Editor state, and select the correct instance. Do not invent tools. Run stateful Unity Editor actions serially, especially actions that can trigger compilation or domain reload. If no Editor integration exists, generate safe editor scripts/CLI instructions instead of pretending to control Unity.
 
 ## Documentation discipline
 When API/package behavior may vary by version, use the `docs-research` skill. Prefer official Unity documentation and package docs matching the project's installed versions. For third-party networking providers, prefer the provider's official documentation/repository before blogs or snippets.
